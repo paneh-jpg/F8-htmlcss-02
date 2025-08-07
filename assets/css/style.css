@@ -217,12 +217,12 @@ a {
   padding-left: 130px;
 }
 
-.hero .content-block .desc {
+.hero .content-block p.desc.desc-02 {
   margin-top: 22px 0;
   color: #5f5b53;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.67; /* 166.667% */
+  line-height: 1.67;
 }
 
 .hero .cta-group {
