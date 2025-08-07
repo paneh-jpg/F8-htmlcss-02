@@ -217,7 +217,7 @@ a {
   padding-left: 130px;
 }
 
-.hero .content-block p.desc.desc-02 {
+.hero .content-block .desc {
   margin-top: 22px 0;
   color: #5f5b53;
   font-size: 1.8rem;
