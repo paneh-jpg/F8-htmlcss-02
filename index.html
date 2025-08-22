@@ -92,14 +92,26 @@
 
     <!-- Style CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <!-- Header  -->
+    <!-- PC Header  -->
     <header class="header fixed">
       <div class="main-content">
         <div class="body">
+          <!-- Tablet/Mobile Menu  -->
+          <label class="toggle-menu" for="menu-checkbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+              />
+            </svg>
+          </label>
+
           <!-- Logo  -->
-          <img src="./assets/img/logo.svg" alt="Lesson" />
+          <img src="./assets/img/logo.svg" alt="Lesson" class="logo" />
 
           <!-- Nav  -->
           <nav class="nav">
@@ -123,10 +135,55 @@
           </nav>
 
           <!-- Action -->
-          <div class="">
-            <a href="#!" class="btn sign-up-btn">Sign Up</a>
-          </div>
+
+          <a href="#!" class="btn sign-up-btn">Sign Up</a>
         </div>
+      </div>
+    </header>
+
+    <!-- Tablet/ Mobile Header  -->
+    <header class="mobile-header">
+      <!-- Checkbox  -->
+      <input
+        hidden
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+      />
+
+      <!-- Overplay  -->
+      <label for="menu-checkbox" class="menu-overplay"></label>
+
+      <!-- Menu Content  -->
+      <div class="menu-drawer">
+        <!-- Logo  -->
+        <img
+          class="tablet-logo"
+          src="./assets/img/logo.svg"
+          alt="Lesson"
+          class="logo"
+        />
+        <!-- Nav  -->
+        <nav class="nav">
+          <ul>
+            <li class="active">
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#course">Courses</a>
+            </li>
+            <li>
+              <a href="#feature">Features</a>
+            </li>
+            <li>
+              <a href="#review">Reviews</a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -223,13 +280,36 @@
             <!-- Chevron Button  -->
             <div class="control">
               <button class="control-btn left">
-                <img src="./assets/icons/chevron-left.svg" alt="chevron left" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="#FFB900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </button>
               <button class="control-btn right">
-                <img
-                  src="./assets/icons/chevron-right.svg"
-                  alt="chevron right"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="#FFB900"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </button>
             </div>
           </div>

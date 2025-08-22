@@ -1,0 +1,277 @@
+/* PC  */
+@media screen and (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile  */
+@media screen and (max-width: 991px) {
+  .header .nav {
+    display: none;
+  }
+
+  .header .body {
+    position: relative;
+  }
+
+  .header .logo {
+    position: absolute;
+    top: 59%;
+    left: 45%;
+  }
+  .header .sign-up-btn {
+    margin-left: auto;
+    min-width: 110px;
+  }
+
+  .header .body .toggle-menu svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .menu-overplay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    padding: 60px;
+    z-index: 3;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+  }
+
+  .menu-checkbox:checked ~ .menu-overplay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  .menu-drawer ul {
+    margin-top: 32px;
+  }
+
+  .menu-drawer ul a {
+    color: #333;
+    display: block;
+    padding: 14px 0;
+    font-weight: 500;
+  }
+
+  .hero .body {
+    flex-direction: column-reverse;
+  }
+
+  .hero .content-block,
+  .hero .media-block {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .hero .content-block {
+    position: relative;
+  }
+
+  .hero .cta-group {
+    justify-content: center;
+  }
+
+  .hero .content-block .desc:not(.desc.desc-02) {
+    position: absolute;
+    right: 6%;
+    top: 110%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero .content-block .stats {
+    margin-top: 40px;
+  }
+
+  .popular-course {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .popular-course .course {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+  }
+
+  .course .thumb img {
+    width: 100%;
+  }
+
+  .feature .body {
+    flex-direction: column-reverse;
+  }
+
+  .feature .content,
+  .feature .images,
+  .feature-02 .content,
+  .feature-02 .images {
+    width: 80%;
+  }
+
+  .feature .images,
+  .feature-02 .images {
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .feature-02 .body {
+    flex-direction: column;
+  }
+
+  .blog .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .blog .item {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog .item .thumb {
+    width: 520px;
+    height: auto;
+  }
+
+  .footer .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .copyright::before {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 911px) {
+}
+
+/* Mobile  */
+@media screen and (max-width: 767px) {
+  .header .sign-up-btn {
+    display: none;
+  }
+  .header .logo {
+    top: 56%;
+    left: 73%;
+  }
+
+  .heading.lv1 {
+    font-size: 4.5rem;
+  }
+
+  .hero .content-block .desc {
+    font-size: 1.4rem;
+  }
+
+  .hero .content-block .desc:not(.desc.desc-02) {
+    display: none;
+  }
+
+  .hero .hero-cta {
+    min-width: 144px;
+    line-height: 57px;
+  }
+
+  .hero .media-block .hero-img {
+    width: 100%;
+    height: 506px;
+  }
+
+  .hero .hero-summary {
+    right: -5px;
+    bottom: -83px;
+    width: 231px;
+  }
+
+  .popular-top {
+    flex-direction: column;
+  }
+
+  .popular-top,
+  .popular-top .info .desc {
+    width: 100%;
+  }
+  .popular-course .course {
+    width: 100%;
+  }
+
+  .feedback {
+    padding: 20px 5px 50px 5px;
+  }
+
+  .feedback-item blockquote {
+    font-size: 1.53rem;
+  }
+
+  .feedback-item .dots {
+    position: absolute;
+    left: 17%;
+    margin-left: 100px;
+  }
+
+  .feature-02 {
+    margin-top: 80px;
+  }
+
+  .feature .content,
+  .feature-02 .content,
+  .feature-02 .images {
+    width: 100%;
+  }
+
+  .feature .images img,
+  .feature-02 .images img {
+    height: 241px;
+    width: 56%;
+  }
+
+  .feature-02 .images img {
+    height: 292px;
+    width: 100%;
+  }
+
+  .blog .item,
+  .blog .blog-top .desc {
+    width: 100%;
+  }
+
+  .blog .item .thumb {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
